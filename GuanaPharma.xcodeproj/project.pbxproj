@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		481D7FE82BDEB89E0024901D /* GuanaPharmaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D7FE72BDEB89E0024901D /* GuanaPharmaApp.swift */; };
+		481D7FEC2BDEB8A30024901D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481D7FEB2BDEB8A30024901D /* Assets.xcassets */; };
+		481D7FEF2BDEB8A30024901D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481D7FEE2BDEB8A30024901D /* Preview Assets.xcassets */; };
+		481D7FF92BDEB8A40024901D /* GuanaPharmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D7FF82BDEB8A40024901D /* GuanaPharmaTests.swift */; };
+		481D80032BDEB8A40024901D /* GuanaPharmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D80022BDEB8A40024901D /* GuanaPharmaUITests.swift */; };
+		481D80052BDEB8A40024901D /* GuanaPharmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D80042BDEB8A40024901D /* GuanaPharmaUITestsLaunchTests.swift */; };
+		484088072BFFECC000C3FD1D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 484088062BFFECC000C3FD1D /* GoogleSignIn */; };
+		484088092BFFECC000C3FD1D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 484088082BFFECC000C3FD1D /* GoogleSignInSwift */; };
+		48624FB02BED5F5C001D15E6 /* CrearCuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48624FAF2BED5F5C001D15E6 /* CrearCuenta.swift */; };
+		486BD9512BE57B3300A8996E /* MenuPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BD9502BE57B3300A8996E /* MenuPrincipal.swift */; };
+		486BD9532BE5806A00A8996E /* Farmacias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BD9522BE5806A00A8996E /* Farmacias.swift */; };
+		4874BA172BE0684A0082FD3A /* InicioSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874BA162BE0684A0082FD3A /* InicioSesion.swift */; };
+		487991082BF7FC8D0055A5ED /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 487991072BF7FC8D0055A5ED /* FirebaseAuth */; };
+		4879910C2BF7FD6D0055A5ED /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4879910B2BF7FD6D0055A5ED /* AuthenticationFirebaseDatasource.swift */; };
+		4879910E2BF7FF3E0055A5ED /* AuthentucationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4879910D2BF7FF3E0055A5ED /* AuthentucationRepository.swift */; };
+		487991102BF8009D0055A5ED /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4879910F2BF8009D0055A5ED /* AuthenticationViewModel.swift */; };
+		48D561EE2C08EB37002B6A1A /* UbicacionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D561ED2C08EB37002B6A1A /* UbicacionViewModel.swift */; };
+		48D561F02C090069002B6A1A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48D561EF2C090069002B6A1A /* Settings.bundle */; };
+		48D561F22C09087B002B6A1A /* FarmaciasUbicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D561F12C09087A002B6A1A /* FarmaciasUbicaciones.swift */; };
+		48D5CC4D2BE4557F000176A2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D5CC4C2BE4557F000176A2 /* Home.swift */; };
+		48DEE3942C06472700461721 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48DEE3932C06472700461721 /* FirebaseAnalyticsSwift */; };
+		48DEE3962C06475700461721 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 48DEE3952C06475700461721 /* FirebaseFirestore */; };
+		48DEE3982C06475700461721 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48DEE3972C06475700461721 /* FirebaseFirestoreSwift */; };
+		48DEE39C2C06481700461721 /* MedicamentosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE39B2C06481700461721 /* MedicamentosViewModel.swift */; };
+		48DEE39F2C06485A00461721 /* MedicamentosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE39E2C06485A00461721 /* MedicamentosRepository.swift */; };
+		48DEE3A12C06489100461721 /* MedicamentosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE3A02C06489100461721 /* MedicamentosDataSource.swift */; };
+		48DEE3A32C065F8700461721 /* MedicamentosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE3A22C065F8700461721 /* MedicamentosView.swift */; };
+		48DEE3A52C06630500461721 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48DEE3A42C06630500461721 /* GoogleService-Info.plist */; };
+		48DEE3A72C06869800461721 /* FavoritoMedicamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DEE3A62C06869800461721 /* FavoritoMedicamento.swift */; };
+		48EF4DB72C0274BB002DBB28 /* CuentaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF4DB62C0274BB002DBB28 /* CuentaUsuario.swift */; };
+		48FEC3432BE7095900901FC1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 48FEC3422BE7095900901FC1 /* FirebaseAnalytics */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		481D7FF52BDEB8A40024901D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 481D7FDC2BDEB89E0024901D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481D7FE32BDEB89E0024901D;
+			remoteInfo = GuanaPharma;
+		};
+		481D7FFF2BDEB8A40024901D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 481D7FDC2BDEB89E0024901D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481D7FE32BDEB89E0024901D;
+			remoteInfo = GuanaPharma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		481D7FE42BDEB89E0024901D /* GuanaPharma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuanaPharma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		481D7FE72BDEB89E0024901D /* GuanaPharmaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuanaPharmaApp.swift; sourceTree = "<group>"; };
+		481D7FEB2BDEB8A30024901D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		481D7FEE2BDEB8A30024901D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		481D7FF42BDEB8A40024901D /* GuanaPharmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanaPharmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		481D7FF82BDEB8A40024901D /* GuanaPharmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuanaPharmaTests.swift; sourceTree = "<group>"; };
+		481D7FFE2BDEB8A40024901D /* GuanaPharmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuanaPharmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		481D80022BDEB8A40024901D /* GuanaPharmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuanaPharmaUITests.swift; sourceTree = "<group>"; };
+		481D80042BDEB8A40024901D /* GuanaPharmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuanaPharmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48624FAF2BED5F5C001D15E6 /* CrearCuenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCuenta.swift; sourceTree = "<group>"; };
+		486BD9502BE57B3300A8996E /* MenuPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipal.swift; sourceTree = "<group>"; };
+		486BD9522BE5806A00A8996E /* Farmacias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farmacias.swift; sourceTree = "<group>"; };
+		4874BA162BE0684A0082FD3A /* InicioSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesion.swift; sourceTree = "<group>"; };
+		4879910B2BF7FD6D0055A5ED /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
+		4879910D2BF7FF3E0055A5ED /* AuthentucationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentucationRepository.swift; sourceTree = "<group>"; };
+		4879910F2BF8009D0055A5ED /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		48CB09952BFFDC220019D38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		48CB09962BFFDFB20019D38F /* GuanaPharma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GuanaPharma.entitlements; sourceTree = "<group>"; };
+		48D561ED2C08EB37002B6A1A /* UbicacionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbicacionViewModel.swift; sourceTree = "<group>"; };
+		48D561EF2C090069002B6A1A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		48D561F12C09087A002B6A1A /* FarmaciasUbicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmaciasUbicaciones.swift; sourceTree = "<group>"; };
+		48D5CC4C2BE4557F000176A2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		48DEE39B2C06481700461721 /* MedicamentosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentosViewModel.swift; sourceTree = "<group>"; };
+		48DEE39E2C06485A00461721 /* MedicamentosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentosRepository.swift; sourceTree = "<group>"; };
+		48DEE3A02C06489100461721 /* MedicamentosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentosDataSource.swift; sourceTree = "<group>"; };
+		48DEE3A22C065F8700461721 /* MedicamentosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicamentosView.swift; sourceTree = "<group>"; };
+		48DEE3A42C06630500461721 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48DEE3A62C06869800461721 /* FavoritoMedicamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoMedicamento.swift; sourceTree = "<group>"; };
+		48EF4DB62C0274BB002DBB28 /* CuentaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaUsuario.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		481D7FE12BDEB89E0024901D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FEC3432BE7095900901FC1 /* FirebaseAnalytics in Frameworks */,
+				487991082BF7FC8D0055A5ED /* FirebaseAuth in Frameworks */,
+				484088072BFFECC000C3FD1D /* GoogleSignIn in Frameworks */,
+				48DEE3982C06475700461721 /* FirebaseFirestoreSwift in Frameworks */,
+				484088092BFFECC000C3FD1D /* GoogleSignInSwift in Frameworks */,
+				48DEE3942C06472700461721 /* FirebaseAnalyticsSwift in Frameworks */,
+				48DEE3962C06475700461721 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FF12BDEB8A40024901D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FFB2BDEB8A40024901D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		481D7FDB2BDEB89E0024901D = {
+			isa = PBXGroup;
+			children = (
+				481D7FE62BDEB89E0024901D /* GuanaPharma */,
+				481D7FF72BDEB8A40024901D /* GuanaPharmaTests */,
+				481D80012BDEB8A40024901D /* GuanaPharmaUITests */,
+				481D7FE52BDEB89E0024901D /* Products */,
+				487991062BF7FC8D0055A5ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		481D7FE52BDEB89E0024901D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				481D7FE42BDEB89E0024901D /* GuanaPharma.app */,
+				481D7FF42BDEB8A40024901D /* GuanaPharmaTests.xctest */,
+				481D7FFE2BDEB8A40024901D /* GuanaPharmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		481D7FE62BDEB89E0024901D /* GuanaPharma */ = {
+			isa = PBXGroup;
+			children = (
+				48DEE3A42C06630500461721 /* GoogleService-Info.plist */,
+				48CB09962BFFDFB20019D38F /* GuanaPharma.entitlements */,
+				48CB09952BFFDC220019D38F /* Info.plist */,
+				4874BA152BE0681C0082FD3A /* Pantallas */,
+				48DEE39A2C0647EA00461721 /* Medicamentos */,
+				48D561EC2C08EAFF002B6A1A /* Ubicacion */,
+				481D7FE72BDEB89E0024901D /* GuanaPharmaApp.swift */,
+				481D7FEB2BDEB8A30024901D /* Assets.xcassets */,
+				481D7FED2BDEB8A30024901D /* Preview Content */,
+				48D561EF2C090069002B6A1A /* Settings.bundle */,
+			);
+			path = GuanaPharma;
+			sourceTree = "<group>";
+		};
+		481D7FED2BDEB8A30024901D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				481D7FEE2BDEB8A30024901D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		481D7FF72BDEB8A40024901D /* GuanaPharmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				481D7FF82BDEB8A40024901D /* GuanaPharmaTests.swift */,
+			);
+			path = GuanaPharmaTests;
+			sourceTree = "<group>";
+		};
+		481D80012BDEB8A40024901D /* GuanaPharmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				481D80022BDEB8A40024901D /* GuanaPharmaUITests.swift */,
+				481D80042BDEB8A40024901D /* GuanaPharmaUITestsLaunchTests.swift */,
+			);
+			path = GuanaPharmaUITests;
+			sourceTree = "<group>";
+		};
+		4874BA152BE0681C0082FD3A /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				48DEE3992C06478E00461721 /* AutenticacionBD */,
+				487991092BF7FCE00055A5ED /* NavegacionView */,
+				4879910A2BF7FD010055A5ED /* AutenticacionVistas */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		487991062BF7FC8D0055A5ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		487991092BF7FCE00055A5ED /* NavegacionView */ = {
+			isa = PBXGroup;
+			children = (
+				48D5CC4C2BE4557F000176A2 /* Home.swift */,
+				486BD9502BE57B3300A8996E /* MenuPrincipal.swift */,
+				48EF4DB62C0274BB002DBB28 /* CuentaUsuario.swift */,
+			);
+			path = NavegacionView;
+			sourceTree = "<group>";
+		};
+		4879910A2BF7FD010055A5ED /* AutenticacionVistas */ = {
+			isa = PBXGroup;
+			children = (
+				48624FAF2BED5F5C001D15E6 /* CrearCuenta.swift */,
+				4874BA162BE0684A0082FD3A /* InicioSesion.swift */,
+			);
+			path = AutenticacionVistas;
+			sourceTree = "<group>";
+		};
+		48D561EC2C08EAFF002B6A1A /* Ubicacion */ = {
+			isa = PBXGroup;
+			children = (
+				486BD9522BE5806A00A8996E /* Farmacias.swift */,
+				48D561ED2C08EB37002B6A1A /* UbicacionViewModel.swift */,
+				48D561F12C09087A002B6A1A /* FarmaciasUbicaciones.swift */,
+			);
+			path = Ubicacion;
+			sourceTree = "<group>";
+		};
+		48DEE3992C06478E00461721 /* AutenticacionBD */ = {
+			isa = PBXGroup;
+			children = (
+				4879910B2BF7FD6D0055A5ED /* AuthenticationFirebaseDatasource.swift */,
+				4879910D2BF7FF3E0055A5ED /* AuthentucationRepository.swift */,
+				4879910F2BF8009D0055A5ED /* AuthenticationViewModel.swift */,
+			);
+			path = AutenticacionBD;
+			sourceTree = "<group>";
+		};
+		48DEE39A2C0647EA00461721 /* Medicamentos */ = {
+			isa = PBXGroup;
+			children = (
+				48DEE3A22C065F8700461721 /* MedicamentosView.swift */,
+				48DEE3A62C06869800461721 /* FavoritoMedicamento.swift */,
+				48DEE39B2C06481700461721 /* MedicamentosViewModel.swift */,
+				48DEE39D2C06483400461721 /* Repository */,
+			);
+			path = Medicamentos;
+			sourceTree = "<group>";
+		};
+		48DEE39D2C06483400461721 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				48DEE3A02C06489100461721 /* MedicamentosDataSource.swift */,
+				48DEE39E2C06485A00461721 /* MedicamentosRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		481D7FE32BDEB89E0024901D /* GuanaPharma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481D80082BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharma" */;
+			buildPhases = (
+				481D7FE02BDEB89E0024901D /* Sources */,
+				481D7FE12BDEB89E0024901D /* Frameworks */,
+				481D7FE22BDEB89E0024901D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuanaPharma;
+			packageProductDependencies = (
+				48FEC3422BE7095900901FC1 /* FirebaseAnalytics */,
+				487991072BF7FC8D0055A5ED /* FirebaseAuth */,
+				484088062BFFECC000C3FD1D /* GoogleSignIn */,
+				484088082BFFECC000C3FD1D /* GoogleSignInSwift */,
+				48DEE3932C06472700461721 /* FirebaseAnalyticsSwift */,
+				48DEE3952C06475700461721 /* FirebaseFirestore */,
+				48DEE3972C06475700461721 /* FirebaseFirestoreSwift */,
+			);
+			productName = GuanaPharma;
+			productReference = 481D7FE42BDEB89E0024901D /* GuanaPharma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		481D7FF32BDEB8A40024901D /* GuanaPharmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481D800B2BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharmaTests" */;
+			buildPhases = (
+				481D7FF02BDEB8A40024901D /* Sources */,
+				481D7FF12BDEB8A40024901D /* Frameworks */,
+				481D7FF22BDEB8A40024901D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				481D7FF62BDEB8A40024901D /* PBXTargetDependency */,
+			);
+			name = GuanaPharmaTests;
+			productName = GuanaPharmaTests;
+			productReference = 481D7FF42BDEB8A40024901D /* GuanaPharmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		481D7FFD2BDEB8A40024901D /* GuanaPharmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481D800E2BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharmaUITests" */;
+			buildPhases = (
+				481D7FFA2BDEB8A40024901D /* Sources */,
+				481D7FFB2BDEB8A40024901D /* Frameworks */,
+				481D7FFC2BDEB8A40024901D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				481D80002BDEB8A40024901D /* PBXTargetDependency */,
+			);
+			name = GuanaPharmaUITests;
+			productName = GuanaPharmaUITests;
+			productReference = 481D7FFE2BDEB8A40024901D /* GuanaPharmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		481D7FDC2BDEB89E0024901D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					481D7FE32BDEB89E0024901D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					481D7FF32BDEB8A40024901D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 481D7FE32BDEB89E0024901D;
+					};
+					481D7FFD2BDEB8A40024901D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 481D7FE32BDEB89E0024901D;
+					};
+				};
+			};
+			buildConfigurationList = 481D7FDF2BDEB89E0024901D /* Build configuration list for PBXProject "GuanaPharma" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 481D7FDB2BDEB89E0024901D;
+			packageReferences = (
+				48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				484088052BFFECC000C3FD1D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 481D7FE52BDEB89E0024901D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				481D7FE32BDEB89E0024901D /* GuanaPharma */,
+				481D7FF32BDEB8A40024901D /* GuanaPharmaTests */,
+				481D7FFD2BDEB8A40024901D /* GuanaPharmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		481D7FE22BDEB89E0024901D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D561F02C090069002B6A1A /* Settings.bundle in Resources */,
+				481D7FEF2BDEB8A30024901D /* Preview Assets.xcassets in Resources */,
+				481D7FEC2BDEB8A30024901D /* Assets.xcassets in Resources */,
+				48DEE3A52C06630500461721 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FF22BDEB8A40024901D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FFC2BDEB8A40024901D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		481D7FE02BDEB89E0024901D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4874BA172BE0684A0082FD3A /* InicioSesion.swift in Sources */,
+				4879910E2BF7FF3E0055A5ED /* AuthentucationRepository.swift in Sources */,
+				48EF4DB72C0274BB002DBB28 /* CuentaUsuario.swift in Sources */,
+				48D561F22C09087B002B6A1A /* FarmaciasUbicaciones.swift in Sources */,
+				4879910C2BF7FD6D0055A5ED /* AuthenticationFirebaseDatasource.swift in Sources */,
+				48624FB02BED5F5C001D15E6 /* CrearCuenta.swift in Sources */,
+				48DEE3A32C065F8700461721 /* MedicamentosView.swift in Sources */,
+				48DEE3A12C06489100461721 /* MedicamentosDataSource.swift in Sources */,
+				487991102BF8009D0055A5ED /* AuthenticationViewModel.swift in Sources */,
+				486BD9512BE57B3300A8996E /* MenuPrincipal.swift in Sources */,
+				486BD9532BE5806A00A8996E /* Farmacias.swift in Sources */,
+				48DEE3A72C06869800461721 /* FavoritoMedicamento.swift in Sources */,
+				48DEE39C2C06481700461721 /* MedicamentosViewModel.swift in Sources */,
+				48D561EE2C08EB37002B6A1A /* UbicacionViewModel.swift in Sources */,
+				48DEE39F2C06485A00461721 /* MedicamentosRepository.swift in Sources */,
+				48D5CC4D2BE4557F000176A2 /* Home.swift in Sources */,
+				481D7FE82BDEB89E0024901D /* GuanaPharmaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FF02BDEB8A40024901D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481D7FF92BDEB8A40024901D /* GuanaPharmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481D7FFA2BDEB8A40024901D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481D80052BDEB8A40024901D /* GuanaPharmaUITestsLaunchTests.swift in Sources */,
+				481D80032BDEB8A40024901D /* GuanaPharmaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		481D7FF62BDEB8A40024901D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 481D7FE32BDEB89E0024901D /* GuanaPharma */;
+			targetProxy = 481D7FF52BDEB8A40024901D /* PBXContainerItemProxy */;
+		};
+		481D80002BDEB8A40024901D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 481D7FE32BDEB89E0024901D /* GuanaPharma */;
+			targetProxy = 481D7FFF2BDEB8A40024901D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		481D80062BDEB8A40024901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		481D80072BDEB8A40024901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		481D80092BDEB8A40024901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GuanaPharma/GuanaPharma.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GuanaPharma/Preview Content\"";
+				DEVELOPMENT_TEAM = 35KYXBWWUD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuanaPharma/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Acceso a localizacion para ubicarte en mapa.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanaPharma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		481D800A2BDEB8A40024901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GuanaPharma/GuanaPharma.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GuanaPharma/Preview Content\"";
+				DEVELOPMENT_TEAM = 35KYXBWWUD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuanaPharma/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Acceso a localizacion para ubicarte en mapa.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanaPharma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		481D800C2BDEB8A40024901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guanapharma.GuanaPharmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuanaPharma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuanaPharma";
+			};
+			name = Debug;
+		};
+		481D800D2BDEB8A40024901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guanapharma.GuanaPharmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuanaPharma.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuanaPharma";
+			};
+			name = Release;
+		};
+		481D800F2BDEB8A40024901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guanapharma.GuanaPharmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuanaPharma;
+			};
+			name = Debug;
+		};
+		481D80102BDEB8A40024901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = guanapharma.GuanaPharmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuanaPharma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		481D7FDF2BDEB89E0024901D /* Build configuration list for PBXProject "GuanaPharma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481D80062BDEB8A40024901D /* Debug */,
+				481D80072BDEB8A40024901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481D80082BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481D80092BDEB8A40024901D /* Debug */,
+				481D800A2BDEB8A40024901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481D800B2BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481D800C2BDEB8A40024901D /* Debug */,
+				481D800D2BDEB8A40024901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481D800E2BDEB8A40024901D /* Build configuration list for PBXNativeTarget "GuanaPharmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481D800F2BDEB8A40024901D /* Debug */,
+				481D80102BDEB8A40024901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		484088052BFFECC000C3FD1D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		484088062BFFECC000C3FD1D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484088052BFFECC000C3FD1D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		484088082BFFECC000C3FD1D /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 484088052BFFECC000C3FD1D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		487991072BF7FC8D0055A5ED /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		48DEE3932C06472700461721 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		48DEE3952C06475700461721 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		48DEE3972C06475700461721 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		48FEC3422BE7095900901FC1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48FEC3412BE7095900901FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 481D7FDC2BDEB89E0024901D /* Project object */;
+}
